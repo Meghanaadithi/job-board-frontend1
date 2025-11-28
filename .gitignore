@@ -7,9 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
-dist
+
+# Build outputs  
+# dist-ssr        <-- KEEP ignored  
 dist-ssr
+# dist            <-- REMOVED so GitHub Pages can see your build
+
 *.local
 
 # Editor directories and files
