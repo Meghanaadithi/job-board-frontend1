@@ -6,7 +6,7 @@ The system supports job posting, job browsing, applications with resume uploads,
 
 ---
 
-## 📌 **Overview**
+##  **Overview**
 
 This project is a cloud-native job board that enables users to:
 
@@ -23,7 +23,7 @@ The backend is **100% serverless** using AWS Lambda + API Gateway — scalable, 
 
 ---
 
-## ⭐ **Features**
+##  **Features**
 
 ### **Frontend**
 - Built using **React.js**  
@@ -59,7 +59,7 @@ The backend is **100% serverless** using AWS Lambda + API Gateway — scalable, 
 
 ---
 
-## 📄 **Resume Upload System**
+##  **Resume Upload System**
 
 - Users upload **PDF** resumes  
 - Stored securely in S3 at:  
@@ -73,7 +73,7 @@ The backend is **100% serverless** using AWS Lambda + API Gateway — scalable, 
 
 ---
 
-## 🛠️ **Technologies Used**
+##  **Technologies Used**
 
 ### **Backend**
 - AWS Lambda  
