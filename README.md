@@ -9,11 +9,17 @@ The application supports job posting, job browsing, candidate applications, resu
 
 This project is a fully serverless Job Board platform that lets users:
 Browse available jobs
+
 Post new job listings
+
 Apply for jobs with a resume (PDF) upload
+
 Store application data securely in DynamoDB
+
 Upload resumes to AWS S3
+
 View all incoming applications from an Admin Dashboard
+
 Deploy the website using GitHub Pages
 
 The system uses an entirely serverless backend powered by AWS Lambda and API Gateway, making it scalable and cost-efficient.
@@ -22,42 +28,73 @@ The system uses an entirely serverless backend powered by AWS Lambda and API Gat
 **Frontend**
 
 React.js UI with Tailwind CSS styling
+
 Hash-based routing for GitHub Pages deployment
+
 Animated components using Framer Motion
+
 Job listing page
+
 Job details page
+
 Job application form with resume upload
+
 Admin Dashboard to view all applications
-Backend (AWS Serverless)
+
+
+**Backend (AWS Serverless)**
+
+
 AWS Lambda functions for:
+
 Posting jobs
+
 Retrieving jobs
+
 Uploading resumes
+
 Saving job applications
+
 Listing applications for admin
+
 API Gateway exposing REST API endpoints
+
 S3 bucket for secure resume uploads
 
 **DynamoDB tables:**
 
 jobs
+
 applications
+
 Resume Upload Capability
+
 Users upload PDFs
+
 Resume is stored in S3 under /resumes/<uuid>.pdf
+
 Admin Dashboard provides live links to download resumes
+
 Admin Features
+
 View all applications in a formatted table
+
 Download resumes directly from S3
+
 Includes name, email, jobId, timestamps, and resume link
+
 Auto-formatted timestamps
+
 
 **Technologies Used
 Backend**
 
 AWS Lambda
+
 AWS API Gateway
+
 AWS DynamoDB
+
 AWS S3
 AWS IAM
 Node.js
