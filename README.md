@@ -1,6 +1,6 @@
 # **Serverless Job Board Application (Full-Stack)**  
 **Live Site:** https://meghanaadithi.github.io/job-board-frontend/
-#**AWS related backend files in:** [https://meghanaadithi.github.io/job-board-aws/
+- **AWS related backend files in:** [https://meghanaadithi.github.io/job-board-aws/
 
 
 A fully serverless, end-to-end Job Board platform built with a React frontend and an AWS Cloud backend.  
