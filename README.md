@@ -9,7 +9,6 @@ The application supports job posting, job browsing, candidate applications, resu
 
 This project is a fully serverless Job Board platform that lets users:
 Browse available jobs
-
 Post new job listings
 
 Apply for jobs with a resume (PDF) upload
