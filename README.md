@@ -1,113 +1,102 @@
-Live Site: https://meghanaadithi.github.io/job-board-frontend/
+# **Serverless Job Board Application (Full-Stack)**  
+**Live Site:** https://meghanaadithi.github.io/job-board-frontend/
 
-**SERVERLESS JOB BOARD APPLICATION (FULL-STACK)**
+A fully serverless, end-to-end Job Board platform built with a React frontend and an AWS Cloud backend.  
+The system supports job posting, job browsing, applications with resume uploads, and an admin dashboard to review all submissions.
 
-A complete end-to-end job portal system with a React frontend, AWS Lambda backend, API Gateway REST APIs, and S3 resume upload system.
-The application supports job posting, job browsing, candidate applications, resume uploads, and an admin dashboard to view all submissions.
+---
 
-**Overview**
+## 📌 **Overview**
 
-This project is a fully serverless Job Board platform that lets users:
-Browse available jobs
-Post new job listings
+This project is a cloud-native job board that enables users to:
 
-Apply for jobs with a resume (PDF) upload
+- Browse available jobs  
+- View job details  
+- Post new job listings  
+- Apply for jobs with a PDF resume  
+- Store all application data securely in DynamoDB  
+- Upload resumes to AWS S3  
+- View applications using an Admin Dashboard  
+- Deploy the frontend using GitHub Pages  
 
-Store application data securely in DynamoDB
+The backend is **100% serverless** using AWS Lambda + API Gateway — scalable, cheap, and maintenance-free.
 
-Upload resumes to AWS S3
+---
 
-View all incoming applications from an Admin Dashboard
+## ⭐ **Features**
 
-Deploy the website using GitHub Pages
+### **Frontend**
+- Built using **React.js**  
+- Styled with **Tailwind CSS**  
+- **HashRouter** for smooth GitHub Pages deployment  
+- Smooth UI animations using **Framer Motion**  
+- Pages include:
+  - Job Listings  
+  - Job Details  
+  - Job Application Form (with Resume Upload)  
+  - Admin Dashboard (view all applications)
 
-The system uses an entirely serverless backend powered by AWS Lambda and API Gateway, making it scalable and cost-efficient.
+---
 
-**Features**
-**Frontend**
+### **Backend (AWS Serverless)**
 
-React.js UI with Tailwind CSS styling
+#### **Lambda Functions Handle:**
+- Posting job listings  
+- Fetching jobs  
+- Fetching job details  
+- Uploading resumes to S3  
+- Saving job applications  
+- Retrieving all applications (Admin)  
 
-Hash-based routing for GitHub Pages deployment
+#### **AWS Services**
+- **API Gateway** – REST API endpoints  
+- **DynamoDB** – Two tables:  
+  - `jobs`  
+  - `applications`  
+- **S3 Bucket** – Resume uploads  
+- **IAM** – Secure permissions  
+- **Node.js** – Runtime for all Lambda handlers  
 
-Animated components using Framer Motion
+---
 
-Job listing page
+## 📄 **Resume Upload System**
 
-Job details page
+- Users upload **PDF** resumes  
+- Stored securely in S3 at:  
+  `/resumes/<uuid>.pdf`  
+- Admin Dashboard displays:
+  - Name  
+  - Email  
+  - Job ID  
+  - Timestamp (auto formatted)  
+  - **Direct resume download link**  
 
-Job application form with resume upload
+---
 
-Admin Dashboard to view all applications
+## 🛠️ **Technologies Used**
 
+### **Backend**
+- AWS Lambda  
+- AWS API Gateway  
+- AWS DynamoDB  
+- AWS S3  
+- AWS IAM  
+- Node.js  
 
-**Backend (AWS Serverless)**
+### **Frontend**
+- React.js  
+- Vite  
+- Tailwind CSS  
+- Framer Motion  
+- React Router (HashRouter)  
+- JavaScript (ES6+)  
 
+### **Deployment**
+- GitHub Pages (Frontend)  
+- AWS Cloud (Backend)  
 
-AWS Lambda functions for:
+### **Dev Tools**
+- ESLint  
+- PostCSS  
+- gh-pages  
 
-Posting jobs
-
-Retrieving jobs
-
-Uploading resumes
-
-Saving job applications
-
-Listing applications for admin
-
-API Gateway exposing REST API endpoints
-
-S3 bucket for secure resume uploads
-
-**DynamoDB tables:**
-
-jobs
-
-applications
-
-Resume Upload Capability
-
-Users upload PDFs
-
-Resume is stored in S3 under /resumes/<uuid>.pdf
-
-Admin Dashboard provides live links to download resumes
-
-Admin Features
-
-View all applications in a formatted table
-
-Download resumes directly from S3
-
-Includes name, email, jobId, timestamps, and resume link
-
-Auto-formatted timestamps
-
-
-**Technologies Used
-Backend**
-
-AWS Lambda
-
-AWS API Gateway
-
-AWS DynamoDB
-
-AWS S3
-AWS IAM
-Node.js
-Frontend
-React.js
-React Router (HashRouter)
-Tailwind CSS
-Framer Motion
-Vite
-JavaScript (ES6+)
-Deployment
-GitHub Pages (Frontend)
-AWS Cloud (Backend)
-Dev Tools
-ESLint
-PostCSS
-gh-pages for deployment
