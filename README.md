@@ -1,7 +1,7 @@
 Live Site: https://meghanaadithi.github.io/job-board-frontend/
 
-**SERVERLESS JOB BOARD APPLICATION (FULL-STACK)
-**
+**SERVERLESS JOB BOARD APPLICATION (FULL-STACK)**
+
 A complete end-to-end job portal system with a React frontend, AWS Lambda backend, API Gateway REST APIs, and S3 resume upload system.
 The application supports job posting, job browsing, candidate applications, resume uploads, and an admin dashboard to view all submissions.
 
